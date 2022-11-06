@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Manrope:wght@500;700&family=Overpass&family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --VeryDarkBlue: hsl(234, 12%, 34%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins;
+  font-size: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-text {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper-text .title-1 {
+  font-weight: 200;
+  color: var(--GrayishBlue);
+  margin-top: 50px;
+}
+.wrapper-text .title-2 {
+  font-weight: 600;
+  color: var(--VeryDarkBlue);
+  margin-bottom: 20px;
+}
+.wrapper-text p {
+  font-weight: 600;
+  color: var(--GrayishBlue);
+  font-weight: 200;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.wrapper-card {
+  position: absolute;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 95px;
+}
+.wrapper-card .card-1 {
+  background-color: var(--VeryLightGray);
+  width: 350px;
+  padding: 20px;
+  border-radius: 5px;
+  border-top: 4px solid var(--Red);
+  color: var(--VeryDarkBlue);
+  box-shadow: 10px 5px 10px var(--GrayishBlue);
+}
+
+.wrapper-card .card-1 p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--GrayishBlue);
+  font-weight: 200;
+}
+
+.wrapper-card .card-1 .logo {
+  margin-left: 220px;
+}
+#two {
+  border-top: 4px solid var(--Cyan);
+  position: relative;
+  left: -73%;
+  top: -110px;
+}
+#three {
+  border-top: 4px solid var(--Orange);
+  position: relative;
+  top: -230px;
+}
+
+#four {
+  border-top: 4px solid var(--Blue);
+  position: relative;
+  top: -600px;
+  left: 73%;
+}
+@media screen and (max-width: 1100px) {
+  #two {
+    left: 0;
+    top: 0;
+  }
+  #three {
+    top: 0;
+  }
+  #four {
+    left: 0;
+    top: 0;
+  }
+  .wrapper-card .card-1 {
+    margin-bottom: 20px;
+  }
+  .wrapper-text {
+    width: 370px;
+  }
+  .wrapper-card .card-1 {
+    margin-left: -130px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
